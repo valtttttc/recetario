@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+html, body {
+    height: 100%;
+    background: #f1e8d5;
+    display: block;
+    justify-content: center;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.recipe-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio igual entre los botones */
+    padding: 20px;
+}
+
+.btnesp, .btnmexc, .btnjap, .btnita {
+    flex: 1 1 40%;  /* Cada botón ocupa el 22% del ancho para dejar espacio entre ellos */
+    height: 40vh; /* Altura ajustada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Verdana;
+    background-size: cover; /* Ajusta la imagen para que cubra el botón */
+    background-position: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px; /* Margen entre los botones */
+    transition: transform 0.3s ease;
+}
+
+.btnesp {
+    background-image: url(españa.jpg);
+}
+
+.btnmexc {
+    background-image: url(mexico.jpg);
+}
+
+.btnjap {
+    background-image: url(japon.jpg);
+}
+
+.btnita {
+    background-image: url(italia.jpg);
+}
+
+/* Efecto hover para todos los botones */
+.btnesp:hover, .btnmexc:hover, .btnjap:hover, .btnita:hover {
+    transform: scale(1.05); /* Escala ligeramente el botón al pasar el ratón */
+}

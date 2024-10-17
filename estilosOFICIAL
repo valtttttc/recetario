@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #f1e8d5;
+    display: block;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centramos los botones */
+    align-items: center;
+    height: calc(100vh - 50px); /* Altura disponible restando la barra de búsqueda */
+    padding: 20px;
+}
+.btnesp {
+    flex: 1 1 40%;  /* Cada botón ahora ocupa el 40% del ancho para hacerlo más pequeño */
+    height: 50vh; /* Menor altura para los botones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px; /* Tamaño del texto más pequeño */
+    font-family: Verdana;
+    background-image: url(españa.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra el botón */
+  background-position: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btnmexc {
+    flex: 1 1 40%;  /* Cada botón ahora ocupa el 40% del ancho para hacerlo más pequeño */
+    height: 50vh; /* Menor altura para los botones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px; /* Tamaño del texto más pequeño */
+    background-image: url(mexico.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra el botón */
+  background-position: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btnjap {
+    flex: 1 1 40%;  /* Cada botón ahora ocupa el 40% del ancho para hacerlo más pequeño */
+    height: 50vh; /* Menor altura para los botones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px; /* Tamaño del texto más pequeño */
+    background-image: url(japon.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra el botón */
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btnita {
+    flex: 1 1 40%;  /* Cada botón ahora ocupa el 40% del ancho para hacerlo más pequeño */
+    height: 50vh; /* Menor altura para los botones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(italia.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra el botón */
+    background-position: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.btnita span {
+    position: relative;
+    font-size: 40px; /* Tamaño del texto más pequeño */
+    z-index: 1; /* Asegura que el texto esté encima del pseudo-elemento */
+}
+
+
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.recipe-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-list li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
